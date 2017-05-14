@@ -21,8 +21,7 @@ class TweetsController < ApplicationController
   
   
   def create
-    @tweet = Tweet.new(tweets_params)
-    Tweet.create(tweets_params)
+    @tweet = Tweet.create(tweets_params)
     if @tweet.save
     redirect_to tweets_path, notice: "つぶやきました！"
     else

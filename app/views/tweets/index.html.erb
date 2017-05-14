@@ -6,7 +6,6 @@
   <p>ツイート:<%= tweet.tweet %></p>
   <%= link_to "ツイートを編集する", edit_tweet_path(tweet.id) %>
   <%= link_to "ツイートを削除する", tweet_path(tweet.id), method: :delete, data: {confirm: '本当に削除して良いですか？'} %>
-  
 <% end %>
 <br>
 <%= link_to "ツイート", new_tweet_path %>

@@ -1,0 +1,14 @@
+<%= form_for(@tweet, url: choose_new_or_edit) do |f| %>
+　<% if @tweet.errors.any? %>
+　    <div id= "error_explanation">
+　    <h2>ツイートは１文字以上１４０文字以下にしてください！</h2>
+　    </div>
+　<% end %>
+　
+    <%= f.label :tweet %>
+    <%= f.text_field :tweet %>
+    <br>
+    <%= f.submit %>
+<% end %>
+
+<%= link_to "ツイート一覧", tweets_path %>

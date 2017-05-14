@@ -1,0 +1,29 @@
+<header>
+  <ul>
+    <li><a href="https://dive-into-code-ryo1990.c9users.io/"><img src="<%= asset_path "home.jpg" %>">トップ</a></li>
+    
+    <li><a href="https://dive-into-code-ryo1990.c9users.io/tweets">ツイート一覧</a></li>
+    <li><a href="https://dive-into-code-ryo1990.c9users.io/tweets/new"><img src="<%= asset_path "tweet.jpg" %>">ツイート</a></li>
+        <div class="bird">
+    <li><img src="<%= asset_path "bird.png" %>"></li>
+    </div>
+  </ul>
+</header>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Liketwitter</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
+
+

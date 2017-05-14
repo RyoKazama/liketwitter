@@ -1,10 +1,9 @@
 <header>
   <ul>
-    <li><a href="https://dive-into-code-ryo1990.c9users.io/"><img src="<%= asset_path "home.jpg" %>">トップ</a></li>
-    
-    <li><a href="https://dive-into-code-ryo1990.c9users.io/tweets">ツイート一覧</a></li>
-    <li><a href="https://dive-into-code-ryo1990.c9users.io/tweets/new"><img src="<%= asset_path "tweet.jpg" %>">ツイート</a></li>
-        <div class="bird">
+            <li><img src="<%= asset_path "home.jpg" %>"><%= link_to "トップ", root_path %></li>
+            <li><%= link_to "ツイート一覧", tweets_path %></li>
+            <li><img src="<%= asset_path "tweet.jpg" %>"><%= link_to "ツイート", new_tweet_path %></li>
+    <div class="bird">
     <li><img src="<%= asset_path "bird.png" %>"></li>
     </div>
   </ul>
